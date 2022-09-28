@@ -1,9 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 //import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
 const API_URL = 'http://www.omdbapi.com?apikey=e8452209'
+
+
+const movie1 = {
+        "Title": "Batman v Superman: Dawn of Justice",
+        "Year": "2016",
+        "imdbID": "tt2975590",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    }
+
 
 const App = () => {
   
@@ -34,13 +44,22 @@ const App = () => {
                     onClick={() => {}}
                 />
             </div>
-            <
 
-
-
-
-
-        </div>
+            <div className="container">
+                <div className="movie">
+                    <div>
+                        <p>{movie1.Year}</p>
+                    </div>
+                    <div>
+                        <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https://via.placeholder.com/400'} alt={movie1.Title}/>
+                    </div>
+                    <div>
+                        <span>{movie1.Type}</span>
+                        <h3>{movie1.Title}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>  
     );
     
 }
