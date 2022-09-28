@@ -1,5 +1,4 @@
 {
-  "homepage": "https://sc62070.github.io/react-practice",
   "name": "react-practice",
   "version": "0.1.0",
   "private": true,
@@ -38,7 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
+  "homepage": "https://sc62070.github.io/react-practice"
   }
-}
